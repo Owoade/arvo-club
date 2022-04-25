@@ -26,7 +26,7 @@ const Header =({refreshFunction,refresh}:{refreshFunction:Function,refresh:boole
       <Box>
           <Wrapper>
              <Flex width="100%" justifyContent={"space-between"} padding=".8em 0 ">
-                <Logo />
+                <Logo dashboard={true} />
                 <Flex width="180px" justifyContent="space-between" position="relative">
                     {notifications?.filter(each => !each.read ).length > 0  && !isFetched && <span style={{width:"15px",position:"absolute",transform:"translateY(1em)",zIndex:3,height:"15px",borderRadius:"50%",backgroundColor:"red",color:"white",fontSize:"12px",display:"flex",justifyContent:"center",alignItems:"center"}}>{notifications?.filter(each => !each.read ).length}</span>}
                 <i onClick={()=> navigate('/dashboard/notifications')} className="ri-notification-2-fill" style={{fontSize:"25px",color:"#017295",transform:"translateY(.5em)"}}></i>

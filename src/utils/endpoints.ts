@@ -1,5 +1,4 @@
-const SERVER_HOST= "https://arvo-club-43bnlt1bm-owoade.vercel.app";
-// const SERVER_HOST= process.env.REACT_APP_HOST;
+const SERVER_HOST= process.env.REACT_APP_HOST;
 export const GET_USER = `${SERVER_HOST}/get-user`;
 export const GET_ALL_USERS = `${SERVER_HOST}/get-all-users`
 export const CREATE_USER = `${SERVER_HOST}/create-user`;

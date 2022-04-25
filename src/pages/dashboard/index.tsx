@@ -47,7 +47,7 @@ const Dashboard = () => {
                             <Text transform="translateY(.5em)" fontSize={{xs:"28px",base:"20px"}} color="brand.typoContrast">Owned clubs</Text>
                             <Button onClick={()=>setWidget(true)} rightIcon={<i className="ri-add-fill"></i>} backgroundColor={"brand.accent"} variant="solid" color="white" width="150px" my={3}>Add new club</Button>
                         </Flex>
-                        <Flex gap={6} my={8} width="fit-content" justifyContent={"space-between"} flexWrap="wrap">
+                        <Flex gap={6} my={8} width="fit-content" display={{xs:"flex",base:"block"}} justifyContent={"space-between"} flexWrap="wrap">
                            { ownedClubs != null ? ownedClubs.length > 0 ? ownedClubs.map((club:{clubName:string,createdAt:number,_id:string})=> <Box  border="1px solid #FFD809" mb={{xs:0,base:3}} _hover={{ boxShadow: " 20px 20px 60px #bebebe, -20px -20px 60px #ffffff" }} transition=".5s ease" width={{xs:"200px",base:"100%"}} borderRadius="20px" padding="1em 0" backgroundColor="white" textAlign="center">
                                 <Text fontSize="20px" color="brand.accent">{club.clubName}</Text>
                                 <Button onClick={(()=> navigate(`club-details/${club._id}`) )} backgroundColor={"brand.accent"} variant="solid" color="white" width="100px" fontSize="14px" my={3}>view details</Button>

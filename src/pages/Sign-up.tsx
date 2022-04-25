@@ -71,7 +71,7 @@ const SignUp = ()=>{
         <Box width="100vw" height="100vh" bgColor="whitesmoke">
             {message && <Message message={message} setMessage={setMessage} />}
             {loadingMessage && <Loader message={loadingMessage} />}
-          <Box width={{sm:"500px",base:"90%"}} margin="0 auto"  padding="2em 0">
+          <Box width={{sm:"500px",base:"100%"}} margin="0 auto"  padding="2em 0">
               <Logo alignCenter={true} />
               <Text textAlign="center">A club management system for arvo finance</Text>
               <Text color="brand.typoAccent"my={3} textAlign="center" fontWeight={"bolder"}>Create an account</Text>

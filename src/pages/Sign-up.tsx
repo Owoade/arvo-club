@@ -75,7 +75,7 @@ const SignUp = ()=>{
               <Logo alignCenter={true} />
               <Text textAlign="center">A club management system for arvo finance</Text>
               <Text color="brand.typoAccent"my={3} textAlign="center" fontWeight={"bolder"}>Create an account</Text>
-              <Box padding="1em" width="300px" margin="0 auto" backgroundColor="white" borderRadius="20px" boxShadow={" 20px 20px 60px #bebebe, -20px -20px 60px #ffffff"}>
+              <Box padding="1em" width={{sm:"300px",base:"90%"}} margin="0 auto" backgroundColor="white" borderRadius="20px" boxShadow={" 20px 20px 60px #bebebe, -20px -20px 60px #ffffff"}>
                   <form onSubmit={(e)=> signUp(e)}>
                   <InputGroup my={2}>
                         <InputLeftElement

@@ -30,7 +30,7 @@ const Notifications = () => {
                       <Box width={{md:"600px",base:"100%"}} padding="2em" height="fit-content" margin="0 auto" backgroundColor={"white"}>
                          {/* Notification */}
                          {
-                             notifications != null ? notifications.length != 0 ? notifications.map((notification:{title:string,body:string,time:number,read:boolean,_id:string}) =>( <Box onClick={()=> navigate(`/dashboard/notification/${notification._id}`)} fontWeight={notification.read ? "": "bolder"} pb={3} borderBottom="1px solid whitesmoke">
+                             notifications != null ? notifications.length != 0 ? notifications.map((notification:{title:string,body:string,time:number,read:boolean,_id:string}) =>( <Box cursor="pointer" onClick={()=> navigate(`/dashboard/notification/${notification._id}`)} fontWeight={notification.read ? "": "bolder"} pb={3} borderBottom="1px solid whitesmoke">
                              <Text fontSize="21px">{notification.title}</Text>
                              <Flex width="100%" justifyContent={"space-between"}>
                                 <Text color="brand.typoContrast">{`${notification.body.substring(0,50)}...`}</Text>

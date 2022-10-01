@@ -25,7 +25,7 @@ const Notifications = () => {
      },[notification])
      const navigate=useNavigate();
   return(
-      <Box>
+      <Box cursor="pointer">
             <Box width="100%" backgroundColor="white">
                 <Header refreshFunction={setRefresh} refresh={refresh} />
             </Box>
